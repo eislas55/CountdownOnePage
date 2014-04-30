@@ -108,11 +108,13 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       return this.init();
     };
     $.countdown.defaultOptions = {
-      date: "June 7, 2087 15:03:25",
+      date: "June 7, 2016 15:03:25",
       refresh: 1000,
       onEnd: $.noop,
       render: function(date) {
-        return $(this.el).html("" + date.years + " Años, " + date.days + " Dias, " + (this.leadingZeros(date.hours)) + " Horas, " + (this.leadingZeros(date.min)) + " Minutos y " + (this.leadingZeros(date.sec)) + " Segundos");
+ //       return $(this.el).html("" + date.years + " Años, " + date.days + " Dias, " + (this.leadingZeros(date.hours)) + " Horas, " + (this.leadingZeros(date.min)) + " Minutos y " + (this.leadingZeros(date.sec)) + " Segundos");
+        return $(this.el).html("<div class=\"clockStyle\">" + date.years + "<br/>Años</div><div class=\"clockStyle\">" + date.days + "<br/>Dias</div><div class=\"clockStyle\">" + (this.leadingZeros(date.hours)) + "<br/>Horas</div><div class=\"clockStyle\">" + (this.leadingZeros(date.min)) + "<br/>Minutos</div><div class=\"clockStyle\">" + (this.leadingZeros(date.sec)) + "<br/>Segundos</div>");
+//  return $(this.el).html("<div class=\"clockStyle\">"+ date.years);
       }
     };
     $.fn.countdown = function(options) {

@@ -1,13 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 body {
   background-color: black;
   color: white;
-  font-size: 40px;
+  font-family: Lato;
+  font-size: 61px;
   text-align: center;
 }
 
+#top-separator {
+  margin-top: 7.6%;
+  font-weight: lighter;
+}
+
 .l-text {
-  font-weight: bolder;
+  font-weight: bold;
   margin-top: 20px;
+}
+
+.m-text {
+  font-size: 20px;
 }
 
 .s-text {
@@ -15,10 +26,13 @@ body {
   font-size: 15px;
 }
 
-.m-text {
-  font-size: 20px;
-}
-
-#top-separator {
-  margin-top: 6%;
+.clockStyle {
+  display: inline-block;
+  border-radius: 50%;
+  border: solid 4px #c8cacc;
+  width: 160px;
+  padding: 10px 9px 43px 4px;
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 19px 10px 19px;
 }

@@ -6,19 +6,16 @@
 	<link rel="stylesheet" href="stylesheets/screen.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
+	<link rel="stylesheet" href="stylesheets/royalslider.css">
+	<link rel="stylesheet" href="stylesheets/rs-minimal-white.css">
 </head>
 <body>
+	<!--********************* CONTAINER ***************************-->
      <div class="container">
-     	<p id="top-separator"><span class="l-text">TOP</span> PROXIMAMENTE</p>
+     	<p id="top-separator"><span class="l-text">TOP</span> PROXIMAMENTE...</p>
      	<p class="s-text">Faltan...</p>
      	<!--********************* CLOCK ***************************-->
      	<div class="countdownScript">
-     	asdasdasdasd
-     		<!--<h1> asd {{ date.year }}</h1>
-     		{{ date.days }}
-     		{{ (this.leadingZeros(date.hours)) }}
-     		{{ (this.leadingZeros(date.min)) }}
-     		{{ (this.leadingZeros(date.sec)) }}-->
 		</div>
      	<!--********************* FORM ***************************-->
      	<p class="m-text">Únete a nuestro club</p>
@@ -26,17 +23,28 @@
 		  <div class="form-group">
 		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Introduce email">
 		  </div>
-		  <button type="submit" class="btn btn-info">Envíar</button>
+		  <button type="submit" class="btn btn-info">Enviar</button>
 		</form>
      </div>
+    <!--********************* CONTAINER SLIDER ***************************--> 
+	<div class="royalSlider rsFullscreen">
+	  <!-- simple image slide -->
+	  <img class="rsImg" src="img/1.jpg" alt="image 1" />
+	  <img class="rsImg" src="img/2.jpg" alt="image 2" />
+	  <img class="rsImg" src="img/3.jpg" alt="image 3" />
+	</div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('.countdownScript').countdown({
-		        date: "April 29, 2014 17:00:00"
+		        date: "April 30, 2014 14:00:00"
 		    });
+		});
+		$(document).ready(function() {
+		  $('.royalSlider').royalSlider();
 		});
 	</script>
 </body>
