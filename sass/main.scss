@@ -1,10 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 body{
 	background-color: black;
+}
+#theContent{
+	background-color: transparent;
 	color: white;
 	font-family: Lato;
-	font-size: 61px;
 	text-align: center;
+	font-size: 61px;
+	width: 100%;
+	@media screen and (max-width: 480px) {
+	  font-size: 30px !important;
+	}
 }
 #top-separator{
 	margin-top: 7.6%;
@@ -25,9 +32,19 @@ body{
 	display: inline-block;
 	border-radius: 50%;
 	border: solid 4px #c8cacc;
-	width: 160px;
 	padding: 10px 9px 43px 4px;
 	text-align: center;
-	font-size: 32px;
+	width: 150px;	
+	font-size: 30px;
 	margin: 10px 19px 10px 19px;
+	@media screen and (max-width: 480px) {
+	  font-size: 25px !important;
+	  width: 124px;
+
+	}
+}
+#mobiledisable{
+	@media screen and (max-width: 481px) {
+	  display: none;
+	}
 }
